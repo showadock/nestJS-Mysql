@@ -5,7 +5,7 @@ import * as Joi from 'joi';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
-import { ProductsModule } from './products/products.module';
+import { PostModule } from './posts/posts.module';
 import { DatabaseModule } from './database/database.module';
 import { enviroments } from './enviroments';
 import config from './config';
@@ -24,7 +24,7 @@ import config from './config';
     }),
     HttpModule,
     UsersModule,
-    ProductsModule,
+    PostModule,
     DatabaseModule,
   ],
   controllers: [AppController],
